@@ -47,13 +47,13 @@ INSERT INTO Paciente(numBeneficiario, nome, logradouro, numero, cep, complemento
 VALUES(99901, 'Washington Silva', 'R. Anhaia', 150, '02345000', 'Casa', '922229999')
 
 INSERT INTO Paciente
-VALUES(99902, 'Luis Ricardo', 'R. Voluntários da Pátria', 2251, '03254010', 'Bloco B. Apto 25', '923450987')
+VALUES(99902, 'Luis Ricardo', 'R. VoluntÃ¡rios da PÃ¡tria', 2251, '03254010', 'Bloco B. Apto 25', '923450987')
 
 INSERT INTO Paciente
 VALUES(99903, 'Maria Elisa', 'Av. Aguia de Haia', 1188, '06987020', 'Apto 1208', '912348765')
 
 INSERT INTO Paciente
-VALUES(99904, 'José Araujo', 'R. XV de Novembro', 18, '03678000', 'Casa', '945674312')
+VALUES(99904, 'JosÃ© Araujo', 'R. XV de Novembro', 18, '03678000', 'Casa', '945674312')
 
 INSERT INTO Paciente
 VALUES(99905, 'Joana Paula', 'R. 7 de Abril', 97, '01214000', 'Conjunto 3 - Apto 801', '912095674')
@@ -83,31 +83,31 @@ INSERT INTO Medico
 VALUES(100004, 'Gabriel Oliveira', 'Av. Dom Helder Camara', 350, '03145000', 'Apto 602', '932458745', 3)
 
 INSERT INTO Consulta(pacienteNumBeneficiario, medicoCodigo, dataHora, observacao)
-VALUES(99901, 100002, '2021/09/04 13:20', 'Infecção Urina')
+VALUES(99901, 100002, '2021/09/04 13:20', 'InfecÃ§Ã£o Urina')
 
 INSERT INTO Consulta
 VALUES(99902, 100003, '2021/09/04 13:15', 'Gripe')
 
 INSERT INTO Consulta
-VALUES(99901, 100001, '2021/09/04 12:30', 'Infecção Garganta')
+VALUES(99901, 100001, '2021/09/04 12:30', 'InfecÃ§Ã£o Garganta')
 
 ALTER TABLE Medico
 ADD diaAtendimento varchar(10) NULL
 
 UPDATE Medico
-SET diaAtendimento = '2ª feira'
+SET diaAtendimento = '2Âª feira'
 WHERE codigo = 100001
 
 UPDATE Medico
-SET diaAtendimento = '4ª feira'
+SET diaAtendimento = '4Âª feira'
 WHERE codigo = 100002
 
 UPDATE Medico
-SET diaAtendimento = '2ª feira'
+SET diaAtendimento = '2Âª feira'
 WHERE codigo = 100003
 
 UPDATE Medico
-SET diaAtendimento = '5ª feira'
+SET diaAtendimento = '5Âª feira'
 WHERE codigo = 100004
 
 DELETE Especialidade
